@@ -29,7 +29,7 @@ function ContactForm() {
         <div className="contact-details">
           <div className="contact-item">
             <i className="fas fa-envelope"></i>
-            <span>bsse24022@itu.edu.pk</span>
+            <span>hussainhaider299@gmail.com</span>
           </div>
           <div className="contact-item">
             <i className="fas fa-map-marker-alt"></i>
@@ -71,6 +71,10 @@ function ContactForm() {
             required
           ></textarea>
         </div>
+        <p style={{ fontSize: "0.85rem", opacity: 0.7, marginBottom: "0.5rem" }}>
+          Note: This form isn't connected yet — please email me directly at{""}
+          <a href="mailto:hussainhaider299@gmail.com">hussainhaider299@gmail.com</a>.
+        </p>
         <button type="submit" className="btn btn-primary">Send Message</button>
       </form>
     </div>
