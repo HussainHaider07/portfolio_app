@@ -1,0 +1,183 @@
+.page-wrapper {
+  min-height: calc(100vh - 70px);
+  padding: 4rem 0 5rem;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.about-page {
+  color: #111827;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: #e0f2ff;
+  color: #0c4a95;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-header {
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.about-title {
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  line-height: 1.04;
+  margin: 0 0 1.25rem;
+  color: #111827;
+}
+
+.about-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #475569;
+  max-width: 40rem;
+}
+
+.about-body {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.08);
+}
+
+.secondary-card {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.about-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.about-card p {
+  margin: 0 0 1.5rem;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.about-list li {
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: #f8fbff;
+  color: #334155;
+}
+
+.about-stat {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1.2rem 1.25rem;
+  border-radius: 20px;
+  border: 1px solid #dbeafe;
+  background: #ffffff;
+}
+
+.about-stat strong {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.about-stat span {
+  color: #475569;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-wrapper {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-page {
+    color: #f3f4f6;
+  }
+
+  .section-tag {
+    color: #84bffd;
+    background: rgba(77, 171, 247, 0.16);
+  }
+
+  .about-title {
+    color: #f3f4f6;
+  }
+
+  .about-subtitle {
+    color: #cbd5e1;
+  }
+
+  .about-card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .about-card h2 {
+    color: #f3f4f6;
+  }
+
+  .about-card p {
+    color: #cbd5e1;
+  }
+
+  .about-list li {
+    color: #e2e8f0;
+    background: #374151;
+    border-color: #4b5563;
+  }
+
+  .secondary-card {
+    background: linear-gradient(180deg, #1e293b 0%, #1f2937 100%);
+  }
+
+  .about-stat strong {
+    color: #f1f5f9;
+  }
+
+  .about-stat span {
+    color: #cbd5e1;
+  }
+
+  .about-stat {
+    background: #374151;
+    border-color: #4b5563;
+  }
+}
